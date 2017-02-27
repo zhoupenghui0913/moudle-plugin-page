@@ -1,0 +1,17 @@
+div#go-top{
+	position: fixed;
+	top: 575px;
+	right: 30px;
+	color: #fff;
+	font-size: 13px;
+	background-color: #fed136;
+	border-radius: 3px;
+	padding: 10px;
+	cursor: pointer;
+	display: none;
+	z-index: 100;
+}
+
+div#go-top:hover{
+	box-shadow: 0 0 4px 1px rgba(0,0,0,0.3);
+}

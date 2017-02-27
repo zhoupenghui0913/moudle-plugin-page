@@ -1,0 +1,59 @@
+/*初始化和重置*/
+
+div.carousel,ul.img-ct{
+	height: 100%;
+	width: 100%;
+}
+
+/*设置窗口*/
+.carousel{
+	position: relative;
+	overflow: hidden;
+}
+
+/*设置整个长面板*/
+.carousel ul.img-ct{
+	position: absolute;  /*后面用JS控制位置，相对于上面窗口的位置*/
+}
+.carousel li{
+	position: relative;
+	float: left;
+	height: 100%;
+}
+.carousel ul.img-ct::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.carousel .cover{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+
+/*轮播切换标记*/
+.bullet{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 10;
+}
+.bullet li{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	border-radius: 20px;
+	cursor: pointer;
+	margin: 5px;
+}
+.bullet li.active{
+	background-color: rgb(254,209,54);
+}
