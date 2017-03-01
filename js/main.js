@@ -12,11 +12,10 @@ requirejs.config({
 	}
 });
 
-requirejs(['jquery', 'carousel', 'gotop', 'lazyload', 'waterfall'],function($, carouselFullScreen, GoTop, lazyLoad, WaterFall){
+requirejs(['jquery', 'carousel', 'gotop', 'lazyload'],function($, carouselFullScreen, GoTop, lazyLoad){
 	$(".carousel").carouselFullScreen();
 	GoTop.inint();
 	lazyLoad.inint( $(".about img") );
-	WaterFall();
 });
 
 // 这里查找 jquery 文件（以 index.html 文件位置为基准）的路径就是 ./js/com/../lib/jquery-2.2.3.min.js
